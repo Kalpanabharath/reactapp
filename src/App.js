@@ -1,10 +1,10 @@
-
+import Mycomponent from './components/head';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <p>avoid error</p>
-  );
+class App extends Component{
+  render(){
+    return <Mycomponent  />
+  }
 }
-
 export default App;
