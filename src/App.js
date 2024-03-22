@@ -1,6 +1,6 @@
-
 import './App.css';
 import { Component } from 'react';
+import Wellcome from './component/wellcome';
 
 class App extends Component{
   state={isloggin:false}
@@ -9,7 +9,7 @@ render(){
     
     return (
       <div className="container">
-        <h1>Hello, User</h1>
+        <Wellcome />
          {isloggin && <button>LOG OUT</button>}
          {!isloggin && <button>LOG IN</button>}
       </div>
