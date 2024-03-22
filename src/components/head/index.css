@@ -8,7 +8,7 @@
     color:black;
     flex-direction: column;
 }
-.container>button{
+.container button{
     padding: 5px;
     background-color:plum;
     border: none;
@@ -16,10 +16,15 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    margin: 10px;
     
 
 }
-.container>button:active{
+.container img{
+    height: 50vh;
+}
+
+.container button:active{
     background-color: antiquewhite;
     
 }
