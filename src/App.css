@@ -1,1 +1,19 @@
-
+.container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container button{
+    background-color: green;
+    color: azure;
+    margin: 20px;
+    padding: 10px;
+    width: 30vw;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
