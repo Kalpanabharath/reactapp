@@ -10,7 +10,8 @@ render(){
     return (
       <div className="container">
         <h1>Hello, User</h1>
-         {isloggin?<button>LOG OUT</button>:<button>LOG IN</button>}
+         {isloggin && <button>LOG OUT</button>}
+         {!isloggin && <button>LOG IN</button>}
       </div>
     
     )
