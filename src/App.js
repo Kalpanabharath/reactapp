@@ -3,21 +3,19 @@ import './App.css';
 import { Component } from 'react';
 
 class App extends Component{
-  state={isloggin:false}
-
-
-  buttonDisplay=()=>{
+  state={isloggin:true}
+render(){
     let {isloggin}=this.state
+    let displaybtn;
     if (isloggin===true){
-      return <button  type='button'>LOG OUT</button>
+      displaybtn = <button  type='button'>LOG OUT</button>
+    }else{
+      displaybtn = <button  type='button'>LOG IN</button>
     }
-    return <button  type='button'>LOG IN</button>
-  }
-  render(){
     return (
       <div className="container">
         <h1>Hello, User</h1>
-        {this.buttonDisplay()}
+         {displaybtn}
       </div>
     
     )
