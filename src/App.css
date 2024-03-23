@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width: 100vw;
     height:100vh;
     display: flex;
@@ -16,4 +16,12 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+} */
+.lightmode{
+    background-color: aliceblue;
+    color: rgb(200, 82, 82);
+}
+.darkmode{
+    background-color: black;
+    color: aliceblue;
 }

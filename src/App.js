@@ -3,24 +3,26 @@ import { Component } from 'react';
 
 
 class App extends Component{
-  state={user:"subscribe"}
-    btntext =()=>{
-    let {user}=this.state
-    if(user==="subscribe"){
-        this.setState((prev)=>({user:"subscribed"}))
-        
+  state={mode:"Makedarkmode",clss:"lightmode"}
+  
+  
+  findmode =()=>{
+    let {mode,clss}=this.state
+    if(mode==="Makedarkmode"){
+      this.setState({mode:"Makelightmode" ,clss:"darkmode"})
+
     }else{
-      this.setState((prev)=>({user:"subscribe"}))
+      this.setState({mode:"Makedarkmode",clss:"lightmode"})
     }
+    
 }   
  
 render(){
-  let {user}=this.state
+  let {mode,clss}=this.state
      return (
-      <div>
-        <h1>WELLCOME</h1>
-        <p>Happy to learn</p>
-        <button onClick={this.btntext}>{user}</button>
+      <div className={clss}>
+        <h1>Click to change mode</h1>
+        <button onClick={this.findmode} >{mode}</button>
       </div>
       
     )
