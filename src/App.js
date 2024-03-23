@@ -1,19 +1,28 @@
 import './App.css';
 import { Component } from 'react';
-import Wellcome from './component/wellcome';
+
 
 class App extends Component{
-  state={isloggin:false}
+  state={user:"subscribe"}
+    btntext =()=>{
+    let {user}=this.state
+    if(user==="subscribe"){
+        this.setState((prev)=>({user:"subscribed"}))
+        
+    }else{
+      this.setState((prev)=>({user:"subscribe"}))
+    }
+}   
+ 
 render(){
-    let {isloggin}=this.state
-    
-    return (
-      <div className="container">
-        <Wellcome />
-         {isloggin && <button>LOG OUT</button>}
-         {!isloggin && <button>LOG IN</button>}
+  let {user}=this.state
+     return (
+      <div>
+        <h1>WELLCOME</h1>
+        <p>Happy to learn</p>
+        <button onClick={this.btntext}>{user}</button>
       </div>
-    
+      
     )
   }
 }
