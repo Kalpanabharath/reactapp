@@ -1,31 +1,35 @@
 import './App.css';
 import { Component } from 'react';
+import Usercomponent from './component/user';
 
-//check ubdate
-class App extends Component{
-  state={mode:"Makedarkmode",clss:"lightmode"}
-  
-  
-  findmode =()=>{
-    let {mode,clss}=this.state
-    if(mode==="Makedarkmode"){
-      this.setState({mode:"Makelightmode" ,clss:"darkmode"})
-
-    }else{
-      this.setState({mode:"Makedarkmode",clss:"lightmode"})
-    }
-    
-}   
- 
-render(){
-  let {mode,clss}=this.state
-     return (
-      <div className={clss}>
-        <h1>Click to change mode</h1>
-        <button onClick={this.findmode} >{mode}</button>
-      </div>
-      
-    )
+let users=[{
+    imgurl:'https://assets.ccbp.in/frontend/react-js/esther-howard-img.png',
+    name:"kalpana",
+    role:"front-end-developer",
+    unicNo:1
+  },
+  {
+    imgurl:"https://assets.ccbp.in/frontend/react-js/esther-howard-img.png",
+    name:"Bharath",
+    role:"Application Engineer",
+    unicNo:2
   }
+  ]
+
+
+class App extends Component{
+  
+render(){
+  return (
+    <div className='container'>
+      <h1>User Details</h1>
+      <ul>
+        {users.map((each)=> < Usercomponent details={each} key={users.unicNo}/>)}
+      </ul>
+    
+    </div>
+  )
+ }
 }
+
 export default App;

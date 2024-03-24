@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.userlist{
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    background-color:dimgray;
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+}
+.userlist img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.userlistcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

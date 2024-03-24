@@ -1,27 +1,18 @@
-/* .container{
-    width: 100vw;
-    height:100vh;
+.container{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    gap: 5px;
+    background-color: blue;
+    align-items: center;
 }
-.container button{
-    background-color: green;
-    color: azure;
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: blue;
+    align-items: center;
+
+}
+h1{
     margin: 20px;
-    padding: 10px;
-    width: 30vw;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-} */
-.lightmode{
-    background-color: aliceblue;
-    color: rgb(200, 82, 82);
-}
-.darkmode{
-    background-color: black;
-    color: aliceblue;
 }
