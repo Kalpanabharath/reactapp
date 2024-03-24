@@ -1,7 +1,7 @@
 import './App.css';
 import { Component } from 'react';
 
-
+//check ubdate
 class App extends Component{
   state={mode:"Makedarkmode",clss:"lightmode"}
   
