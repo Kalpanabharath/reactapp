@@ -1,6 +1,6 @@
 import  './index.css'
 let Usercomponent=Props=>{
-    let {details} = Props
+    let {details,kay} = Props
     let{imgurl,name,role}=details
     
     
