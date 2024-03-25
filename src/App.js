@@ -39,7 +39,10 @@ let users=[{
 class App extends Component{
   state={inp:"",userdetails:users}
   inpclick=(event)=>{
+    let {inp}=this.state
   this.setState({inp:event.target.value})
+  let searchinp = users.filter((each)=>each.name.includes(inp))
+  this.setState({userdetails:searchinp})
   // let filteredlist=  users.includes()  
   } 
   deleteUser=(unicNo=>{
@@ -52,7 +55,7 @@ class App extends Component{
   
 render(){
   let {inp,userdetails}=this.state
-  let searchinp = users.filter((each)=>each.name.includes(inp))
+ 
 
   return (
     <div className='container'>
