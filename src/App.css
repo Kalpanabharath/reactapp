@@ -4,6 +4,17 @@
     gap: 5px;
     background-color: blue;
     align-items: center;
+    padding: 10px;
+}
+input{
+    font-size: 20px;
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding: 10px;
+    
+
 }
 ul{
     display: flex;
